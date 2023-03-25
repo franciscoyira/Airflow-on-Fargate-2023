@@ -60,7 +60,7 @@ export class RDSConstruct extends Construct {
 
     this.rdsInstance = new DatabaseInstance(this, "RDSInstance", {
       engine: DatabaseInstanceEngine.postgres({
-        version: PostgresEngineVersion.VER_12_4
+        version: PostgresEngineVersion.VER_14_6
       }),
       instanceType: defaultDBConfig.instanceType,
       instanceIdentifier: defaultDBConfig.dbName,
